@@ -1,1 +1,1 @@
-# goit-markup-hw-03
+# github-goit-markup-hw-02
