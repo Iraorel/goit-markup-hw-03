@@ -9,6 +9,16 @@
 }
 
 
+html{
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
 body{ 
     font-family: "Roboto" , sans-serif;
     font-style: normal;
@@ -29,49 +39,38 @@ body{
 }
 
 .list{
-    list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .conteiner{
-  
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-  
+.menu{
+  display: inline-flex;
 }
-.site-nav {
-  display: flex;
-}
-
-.site-nav .item:not(:last-child){
+.menu-item:not(last-child){
   margin-right: 50px;
 }
+ .item:not(last-child){
+  margin-right: 50px;
+ }
 
-.site-nav .link {
-  display: flex;
-  margin-top: 19px;
-  margin-bottom: 32px;
-}
-.auth-nav {
-  display: flex;
-}
 
-.auth-nav .item + .item {
-  margin-left: 50px;
-}
-}
-
-.auth-nav .link{
-  display: block;
-  margin-top: 19px;
-  margin-bottom: 32px;
-}
-.dark-bg{
+.dark-bg{ 
     background-color: var(--dark-bg-color);
 }
 .button{
+
+    border-radius: 10px;
+    min-width: 200;
     font-family: Roboto , sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -79,7 +78,9 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--dark-bg-text-color);
+    background-color: var(--accent-color);
     cursor: pointer;
+  
 }
 .logo{
   font-family: "Raleway" , sans-serif;
@@ -123,6 +124,8 @@ body{
   }
 
   .header{
+    padding-top: 19px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -130,6 +133,20 @@ body{
     color: var(--title-color);
   }
 
+.header .conteiner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header .logo{
+  margin-right: 50px;
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+ margin-right: auto;
+}
   .text{
     font-family: Risque , sans-serif;
     font-size: 14px;
