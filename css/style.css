@@ -68,7 +68,9 @@ body{
 }
 
 .menu{
-  display: inline-flex;
+  display:inline-flex;
+  
+
 }
 .menu-item:not(last-child){
   margin-right: 50px;
@@ -173,8 +175,8 @@ body{
 }
 
 .hero {
-  display: flex;
-  align-items: center;
+  
+  text-align: center;
   min-height: 100vh;
 }
  .desc {
