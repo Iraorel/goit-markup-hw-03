@@ -9,7 +9,9 @@
     --grid-item:1;
 }
 
-
+html {
+  box-sizing: border-box;
+}
 
 *,
 *::before,
@@ -26,6 +28,17 @@ body{
     color: var(--main-text-color);
 
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .link{
   display: block;
   padding-top: 32px;
@@ -107,7 +120,7 @@ margin-left: 50px;
 }
 
 
-.dark-bg{ 
+.dark-bg { 
     background-color: var(--dark-bg-color);
 }
 .button{
@@ -146,6 +159,7 @@ margin-left: 50px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-bottom: 50px;
 
 }
 
@@ -240,7 +254,21 @@ margin-left: 50px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+
   }
+
+  /*footer*/
+
+  .footer{
+    display: flex;
+    
+  }
+
+.adress .link {
+padding-top: 0px;
+  padding-bottom: 8px;
+}
+
 /* portfolio */
 
 
@@ -262,4 +290,16 @@ margin-left: 50px;
   flex-basis: calc (100%-9*var(--grid-item)/var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 50px;
+   
+} 
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+ 
+ 
 }
