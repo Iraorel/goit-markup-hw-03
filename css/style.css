@@ -128,8 +128,6 @@ margin-left: 50px;
 }
 .button{
  
-    padding: 10px 32px;
-    min-width: 200;
     font-family: Roboto , sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -140,9 +138,9 @@ margin-left: 50px;
     background-color: var(--accent-color);
     cursor: pointer;
     border: none;
-  
+    padding: 10px 32px;
+    
 }
-
 
 
 
@@ -201,6 +199,7 @@ margin-left: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
   
 
 }
@@ -306,6 +305,8 @@ img{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-color); 
+    
+    word-break: break-all;
 
 }
 .team {
@@ -348,12 +349,27 @@ img{
 
 .card-text{
   margin-top: 5px;
+
 }
 
+.card-thumb{
+  width: 370px;
+ 
+}
 .card-content{
-  padding: 20px 24px;
-
+padding: 20px 24px;
+background:#ffffff;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
 }
+  
+
+
+
 .button-portfolio{
   border: none;
+  min-width: 73px;
+  padding: 6px  22px;
+  cursor: pointer;
 }
+
