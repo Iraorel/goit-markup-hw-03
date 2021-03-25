@@ -361,12 +361,14 @@ img{
  
 }
 .card-content{
-
+display: inline-block;
+width: 370px;
+height: 110px;
 padding: 20px 24px;
 background:#ffffff;
 border: 1px solid #EEEEEE;
-box-sizing: border-box;
-text-transform: none;
+
+text-align: none;
     
 }
   
