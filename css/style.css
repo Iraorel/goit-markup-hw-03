@@ -31,6 +31,12 @@ body{
 
 }
 
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -248,14 +254,16 @@ margin-left: 50px;
     margin-bottom: 50px;
   }
 
-
   .team-item{
   
     flex-basis: calc(100%-30px*var(--grid-item)/var(--grid-item));
      text-align: center;
-     --grid-item: 4;
     
   }
+  .team-item{
+    --grid-item: 4;
+  }
+
   .team-member{
     font-weight: 500;
     font-size: 16px;
@@ -329,8 +337,12 @@ img{
   flex-basis: calc((100%-(30px*var(--grid-item)))/var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
-  --grid-item: 9;
+ 
 
+}
+.grid-item-portfolio {
+
+ --grid-item: 9;
 }
 
 .portfolio {
